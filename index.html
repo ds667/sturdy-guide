@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Digital Clock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="clock">00:00:00</h1>
+    <p id="date">January 1, 2025</p>
+    <p id="greeting">Good Morning!</p>
+    <div class="controls">
+      <button class="theme-btn" id="light-theme">Light</button>
+      <button class="theme-btn" id="dark-theme">Dark</button>
+      <button class="theme-btn" id="neon-theme">Neon</button>
+      <input type="color" id="custom-color" title="Pick a custom color">
+      <select id="font-selector">
+        <option value="Arial">Arial</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Monospace">Monospace</option>
+      </select>
+      <button id="toggle-format">Toggle AM/PM</button>
+    </div>
+    <div class="additional-features">
+      <button id="stopwatch-btn">Stopwatch</button>
+      <button id="timer-btn">Timer</button>
+      <select id="timezone-selector">
+        <option value="local">Local Time</option>
+        <option value="GMT">GMT</option>
+        <option value="EST">EST</option>
+        <option value="PST">PST</option>
+      </select>
+    </div>
+    <div id="stopwatch" class="hidden">
+      <h2>Stopwatch</h2>
+      <p id="stopwatch-time">00:00:00</p>
+      <button id="start-stopwatch">Start</button>
+      <button id="reset-stopwatch">Reset</button>
+    </div>
+    <div id="timer" class="hidden">
+      <h2>Timer</h2>
+      <input type="number" id="timer-input" placeholder="Seconds">
+      <button id="start-timer">Start</button>
+      <p id="timer-display">00:00</p>
+    </div>
+    <!-- Mute Button -->
+    <button id="mute-btn">Mute</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

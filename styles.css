@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  color: white;
+  transition: all 0.5s;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 10px 0;
+}
+
+p {
+  margin: 5px 0;
+}
+
+.theme-btn {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.theme-btn:hover {
+  transform: scale(1.1);
+}
+
+#custom-color {
+  cursor: pointer;
+}
+
+.controls {
+  margin: 10px 0;
+}
+
+.additional-features button {
+  background: #2575fc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Different Themes */
+body.light {
+  background: #f0f0f0;
+  color: #000000;
+}
+
+body.dark {
+  background: #121212;
+  color: #ffffff;
+}
+
+body.neon {
+  background: #0f0f24;
+  color: #39ff14;
+}
