@@ -1,16 +1,16 @@
-let isMuted = false; // To keep track of the mute state
-const audioElement = new Audio('lofi.mp3'); // Path to your lofi.mp4 file
+let isMuted = false;
+const audioElement = new Audio('lofi.mp3'); 
 
-audioElement.loop = true; // Make the music loop indefinitely
+audioElement.loop = true; 
 
-// Start the music when the page loads
+
 window.onload = function() {
   audioElement.play().catch((error) => {
     console.log('Error with audio play:', error);
   });
 }
 
-// Function to toggle mute state
+
 function toggleMute() {
   isMuted = !isMuted;
   if (isMuted) {
@@ -22,10 +22,10 @@ function toggleMute() {
   }
 }
 
-// Mute button event listener
+
 document.getElementById('mute-btn').addEventListener('click', toggleMute);
 
-// Clock Update Function
+
 function updateClock() {
   const clock = document.getElementById("clock");
   const date = document.getElementById("date");
@@ -53,7 +53,7 @@ function updateClock() {
   greeting.textContent = hours < 12 ? "Good Morning!" : "Good Evening!";
 }
 
-// Theme Change Function
+
 function changeTheme(theme) {
   document.body.className = theme;
   localStorage.setItem("theme", theme);
